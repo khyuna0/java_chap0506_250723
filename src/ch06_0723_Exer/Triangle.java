@@ -17,5 +17,7 @@ public class Triangle {
 		int sum = a + b + c;
 		return ( ( sum - max ) > max ); 
 		
+		
+		// (a + b) > c , (b + c) > a , (c + a) > b 
 	}
 }

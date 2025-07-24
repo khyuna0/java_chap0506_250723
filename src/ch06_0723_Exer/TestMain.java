@@ -30,17 +30,14 @@ public class TestMain {
 		// 4. BMI
 		
 		BMI bmi = new BMI();
-		bmi.bmiCalulator(55.0, 165.5);
+		bmi.bmiCalulator(50.0, 165.5);
 		
 		System.out.println("===============");
 		
 		// 5. Rectangle
 		
 		Rectangle rectangle1 = new Rectangle(5.0, 4.0); // double
-		System.out.println((rectangle1.dHeight) + (rectangle1.dWeight));
-		
-		Rectangle rectangle2 = new Rectangle(5, 4); // int
-		System.out.println((rectangle2.iHeight) + (rectangle2.iWeight));
+		rectangle1.recRound();
 		
 		System.out.println("===============");
 		
@@ -53,10 +50,9 @@ public class TestMain {
 		System.out.println("===============");
 		
 		Triangle triangle2 = new Triangle();
-		boolean t2 = triangle2.isVaild(2, 2, 3);
+		boolean t2 = triangle2.isVaild(3, 4, 5);
 		System.out.println(t2); // T
 		
-		System.out.println("===============");
 		
 	}
 

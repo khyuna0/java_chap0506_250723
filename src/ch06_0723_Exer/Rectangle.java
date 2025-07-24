@@ -1,27 +1,31 @@
 package ch06_0723_Exer;
 
+import java.sql.ResultSet;
+
 public class Rectangle {
 	
-	int iWeight;
-	int iHeight;
-	double dWeight;
-	double dHeight;
+	double width; // 더 큰 범위로 설정
+	double height;
 	
 	public Rectangle() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
 
-	public Rectangle(int iWeight, int iHeight) {
+	public Rectangle(double width, double height) {
 		super();
-		this.iWeight = 2*iWeight;
-		this.iHeight = 2*iHeight;
+		this.width = width;
+		this.height = height;
 	}
 
-	public Rectangle(double dWeight, double dHeight) {
+	public Rectangle(int width, int height) {
 		super();
-		this.dWeight = 2*dWeight;
-		this.dHeight = 2*dHeight;
+		this.width = width;
+		this.height = height;
 	}
 
+
+	public void recRound () {
+		System.out.println((width + height) * 2);
+	}
 }
