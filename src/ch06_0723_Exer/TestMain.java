@@ -53,6 +53,9 @@ public class TestMain {
 		boolean t2 = triangle2.isVaild(3, 4, 5);
 		System.out.println(t2); // T
 		
+		System.out.println("===============");
+		
+		Triangle tr3 = new Triangle();
 		
 	}
 
